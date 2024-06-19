@@ -1,7 +1,7 @@
 databases:
   - name: rubyonrails
     databaseName: rubyonrails
-    user: postgres
+    user: enduser
     plan: free
 
 services:

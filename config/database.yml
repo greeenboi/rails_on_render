@@ -22,10 +22,12 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
-  host: ''
-  database: postgres
+  encoding: unicode
+  database: rubyonrails
+  pool: 5
   username: postgres
-  password: #Heavenwater1
+  password: '#Heavenwater1'
+#  url: postgresql://postgres:#Heavenwater1@localhost:5432/rubyonrails
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -84,7 +86,10 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  host: ''
-  database: postgres
+  encoding: unicode
+  database: rubyonrails
+  pool: 5
   username: postgres
-  password: #Heavenwater1
+  password: '#Heavenwater1'
+#  url: postgresql://postgres:#Heavenwater1@localhost:5432/rubyonrails
+

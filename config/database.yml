@@ -21,7 +21,11 @@ default: &default
 
 development:
   <<: *default
-  database: rubyonrails_test_development
+  adapter: postgresql
+  host: ''
+  database: postgres
+  username: postgres
+  password: #Heavenwater1
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -55,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rubyonrails_test_test
+  database: postgres
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -79,6 +83,8 @@ test:
 #
 production:
   <<: *default
-  database: rubyonrails_test_production
-  username: rubyonrails_test
-  password: <%= ENV["RUBYONRAILS_TEST_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  host: ''
+  database: postgres
+  username: postgres
+  password: #Heavenwater1

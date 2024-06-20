@@ -424,7 +424,7 @@ main {
     height: 92%;
     background-color: rgba(169, 150, 253, 0.6);
     border-radius: inherit;
-    font-size: 1.75rem;
+    font-size: 30px;
     opacity: 0;
     transition: all 0.4s linear;
     cursor: pointer;
